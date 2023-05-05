@@ -1,11 +1,12 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "Online Course Management System Backend",
+  "description": "WLAP Backend",
   "main": "server.js",
   "scripts": {
     "test": "jest",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "start": "node server.js"
   },
   "author": "Chintan Suthar",
   "license": "ISC",
