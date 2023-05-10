@@ -7,11 +7,11 @@ const Comment = require('./comment.model');
 const Grade = require('./grade.model');
 const Announcement = require('./announcement.model');
 const Message = require('./message.model');
-// const Notification = require('./notification.model');
+
 const {
     FileCollection
 } = require('./file.model');
-// const Folder = require('./folder.model');
+
 
 // export files
 module.exports = {
@@ -23,7 +23,6 @@ module.exports = {
     Grade,
     Announcement,
     Message,
-    // Notification,
     FileCollection,
-    // Folder,
+
 };

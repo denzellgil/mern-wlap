@@ -34,22 +34,7 @@ const assignmentSchema = new mongoose.Schema({
         type : String,
         required : true
     }
-    // files: [{
-    //     type: mongoose.Schema.Types.ObjectId,
-    //     ref: 'File',
-    // }],
-    // grades: [{
-    //     type: mongoose.Schema.Types.ObjectId,
-    //     ref: 'Grade',
-    // }],
-    // folders: [{
-    //     type: mongoose.Schema.Types.ObjectId,
-    //     ref: 'Folder',
-    // }],
-    // notifications: [{
-    //     type: mongoose.Schema.Types.ObjectId,
-    //     ref: 'Notification',
-    // }],
+  
 }, {
     timestamps: true,
 });

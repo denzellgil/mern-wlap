@@ -33,18 +33,7 @@ const submissionSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'File',
     }],
-    // grades: [{
-    //     type: mongoose.Schema.Types.ObjectId,
-    //     ref: 'Grade',
-    // }],
-    // folders: [{
-    //     type: mongoose.Schema.Types.ObjectId,
-    //     ref: 'Folder',
-    // }],
-    // notifications: [{
-    //     type: mongoose.Schema.Types.ObjectId,
-    //     ref: 'Notification',
-    // }],
+   
 }, {
     timestamps: true,
 });

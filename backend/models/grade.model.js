@@ -1,11 +1,7 @@
 const mongoose = require('mongoose');
 
 const gradeSchema = new mongoose.Schema({
-    // assignment: {
-    //     type: mongoose.Schema.Types.ObjectId,
-    //     ref: 'Assignment',
-    //     required: true,
-    // },
+
     submission: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Submission',
@@ -22,22 +18,7 @@ const gradeSchema = new mongoose.Schema({
         min: 0,
         max: 100,
     },
-    // comments: [{
-    //     type: mongoose.Schema.Types.ObjectId,
-    //     ref: 'Comment',
-    // }],
-    // files: [{
-    //     type: mongoose.Schema.Types.ObjectId,
-    //     ref: 'File',
-    // }],
-    // folders: [{
-    //     type: mongoose.Schema.Types.ObjectId,
-    //     ref: 'Folder',
-    // }],
-    // notifications: [{
-    //     type: mongoose.Schema.Types.ObjectId,
-    //     ref: 'Notification',
-    // }],
+    
 }, {
     timestamps: true,
 });

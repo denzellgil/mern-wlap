@@ -21,7 +21,6 @@ const loginUser = async (req, res) => {
         // create and assign a token
         const token = jwt.sign({id: user._id, email: user.email}, process.env.SECRET, {expiresIn: '1h'});
 
-        // res.header('authorization', token);
         res.set('authorization', token);
         return response.successResponse(res, { token,user});
 

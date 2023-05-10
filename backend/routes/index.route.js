@@ -8,9 +8,6 @@ const gradeRoute = require('./grade.route');
 const announcementRoute = require('./announcement.route');
 const messageRoute = require('./message.route');
 const feedbackRoute = require('./feedback.route');
-// const notificationRoute = require('./notification.route');
-// const fileRoute = require('./file.route');
-// const folderRoute = require('./folder.route');
 
 // export routes
 module.exports = {
@@ -23,7 +20,5 @@ module.exports = {
     announcementRoute,
     messageRoute,
     feedbackRoute,
-    // notificationRoute,
-    // fileRoute,
-    // folderRoute,
+    
 };

@@ -7,9 +7,6 @@ const commentController = require('./comment.controller');
 const gradeController = require('./grade.controller');
 const announcementController = require('./announcement.controller');
 const messageController = require('./message.controller');
-// const notificationController = require('./notification.controller');
-// const fileController = require('./file.controller');
-// const folderController = require('./folder.controller');
 
 // export controllers
 module.exports = {
@@ -21,7 +18,5 @@ module.exports = {
     gradeController,
     announcementController,
     messageController,
-    // notificationController,
-    // fileController,
-    // folderController,
+
 };

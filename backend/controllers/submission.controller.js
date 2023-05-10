@@ -72,7 +72,7 @@ exports.getSubmissionsByAssignmentId = async (req, res) => {
     try {
         if(!['ADMIN', 'TEACHER'].includes(req.role))
             return response.unauthorizedResponse(res);
-        // const submissions = await Submission.find({assignment: req.params.id, student: req.id});
+    
         const submissions = await Submission.find({assignment: req.params.id});
         const submissionWithUserName = [];
         for(let i = 0; i < submissions.length; i++) {

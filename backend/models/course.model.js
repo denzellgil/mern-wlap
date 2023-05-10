@@ -17,7 +17,6 @@ const courseSchema = new mongoose.Schema({
     },
     description: {
         type: String,
-        // required: true,
         trim: true,
     },
     teacher: {
@@ -37,26 +36,17 @@ const courseSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Announcement',
     }],
-    // calendar: {
-    //     type: mongoose.Schema.Types.ObjectId,
-    //     ref: 'Calendar',
-    // },
+
     files: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: 'File',
     }],
-    // folders: [{
-    //     type: mongoose.Schema.Types.ObjectId,
-    //     ref: 'Folder',
-    // }],
+
     messages: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Message',
     }],
-    // notifications: [{
-    //     type: mongoose.Schema.Types.ObjectId,
-    //     ref: 'Notification',
-    // }],
+
 }, {
     timestamps: true,
 });
