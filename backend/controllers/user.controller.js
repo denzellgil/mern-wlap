@@ -144,7 +144,7 @@ const addCourseToUser = async (req, res) => {
                 grade: 0,
                 graded: false,
                 comments: [],
-                feedback : ""
+                feedback : " "
             });
             const updatedAssignment = await Assignment.findByIdAndUpdate(assignment._id, {
                 $push: {submissions: submissionToAdd._id}
