@@ -237,7 +237,7 @@ const Material = ({announcements, course, instructor }) => {
         {/* <AddAnnouncement course={course} setchanged={setChanged} changed={changed}/> */}
         <div>
         {       
-            get('role') == 'TEACHER' ? 
+            get('role') === 'TEACHER' ? 
             <div>
             <Button variant="outlined"  onClick={handleClickOpen}>
               Add Material
@@ -503,14 +503,14 @@ const Material = ({announcements, course, instructor }) => {
                 </IconButton>
                 <Divider orientation="vertical" style={{paddingLeft:"5px",paddingRight:"5px"}}/>
                 {
-                  get('role') == 'TEACHER' ? 
+                  get('role') === 'TEACHER' ? 
                   <IconButton edge="end" aria-label="delete">
                   <EditIcon onClick={() => handleOpenEdit(announcement)}/>
                 </IconButton> : <></>
                 }
                 <Divider orientation="vertical" style={{paddingLeft:"5px",paddingRight:"5px"}}/>
                 {
-                  get('role') == 'TEACHER' ? 
+                  get('role') === 'TEACHER' ? 
                   <IconButton edge="end" aria-label="delete">
                   <DeleteIcon onClick={() => handleDelete(announcement._id)}/>
                 </IconButton> : <></>
@@ -525,4 +525,4 @@ const Material = ({announcements, course, instructor }) => {
   );
 }
 
-export default Material
+export default Material;

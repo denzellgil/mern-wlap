@@ -433,4 +433,4 @@ const Announcement = ({course }) => {
   );
 }
 
-export default Announcement
+export default Announcement;

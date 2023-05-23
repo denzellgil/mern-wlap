@@ -473,4 +473,4 @@ const Assignment = ({ course }) => {
   );
 }
 
-export default Assignment
+export default Assignment;

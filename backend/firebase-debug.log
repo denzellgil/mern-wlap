@@ -1,0 +1,36 @@
+[debug] [2023-05-22T11:41:55.699Z] ----------------------------------------------------------------------
+[debug] [2023-05-22T11:41:55.701Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-05-22T11:41:55.702Z] CLI Version:   12.1.0
+[debug] [2023-05-22T11:41:55.703Z] Platform:      win32
+[debug] [2023-05-22T11:41:55.703Z] Node Version:  v18.12.0
+[debug] [2023-05-22T11:41:55.704Z] Time:          Mon May 22 2023 19:41:55 GMT+0800 (Philippine Standard Time)
+[debug] [2023-05-22T11:41:55.704Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-22T11:41:55.853Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-22T11:41:55.854Z] > authorizing via signed-in user (rondenzellgil@gmail.com)
+[debug] [2023-05-22T11:41:55.854Z] [iam] checking project wlap-app for permissions ["firebase.projects.get"]
+[debug] [2023-05-22T11:41:55.856Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/wlap-app:testIamPermissions [none]
+[debug] [2023-05-22T11:41:55.856Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/wlap-app:testIamPermissions x-goog-quota-user=projects/wlap-app
+[debug] [2023-05-22T11:41:55.857Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/wlap-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-05-22T11:41:56.877Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/wlap-app:testIamPermissions 200
+[debug] [2023-05-22T11:41:56.878Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/wlap-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-05-22T11:41:56.879Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/wlap-app [none]
+[debug] [2023-05-22T11:41:57.265Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/wlap-app 200
+[debug] [2023-05-22T11:41:57.266Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/wlap-app {"projectId":"wlap-app","projectNumber":"151008404391","displayName":"wlap-app","name":"projects/wlap-app","resources":{"hostingSite":"wlap-app"},"state":"ACTIVE","etag":"1_dabd0612-6de9-4677-ad3c-b1f0d400b1da"}
+[info] 
+[info] === Serving from 'C:\Users\Asus\OneDrive\Desktop\WLAP5\backend'...
+[info] 
+[debug] [2023-05-22T11:41:57.273Z] defaultcredentials: writing to file C:\Users\Asus\AppData\Roaming\firebase\rondenzellgil_gmail_com_application_default_credentials.json
+[debug] [2023-05-22T11:41:57.275Z] Setting GAC to C:\Users\Asus\AppData\Roaming\firebase\rondenzellgil_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Asus\\AppData\\Roaming\\firebase\\rondenzellgil_gmail_com_application_default_credentials.json"}}
+[debug] [2023-05-22T11:41:57.275Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/wlap-app/adminSdkConfig [none]
+[debug] [2023-05-22T11:41:57.677Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/wlap-app/adminSdkConfig 200
+[debug] [2023-05-22T11:41:57.678Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/wlap-app/adminSdkConfig {"projectId":"wlap-app","storageBucket":"wlap-app.appspot.com"}
+[debug] [2023-05-22T11:41:57.694Z] Error: listen EADDRINUSE: address already in use ::1:5000
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (node:net:1682:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:8)
+[error] 
+[error] Error: An unexpected error has occurred.
+[info] i  functions: Watching "C:\Users\Asus\OneDrive\Desktop\WLAP5\backend\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\Asus\\OneDrive\\Desktop\\WLAP5\\backend\\functions\" for Cloud Functions..."}}
+[debug] [2023-05-22T11:41:57.702Z] Validating nodejs source
